@@ -15,11 +15,17 @@ body{
     background-color: var(--bg-body);    
 }
 
-.header-img {
+.header-img img{
     background-color: var(--color1);
-    max-width: 100%;
+    width: 100%;
     height: 240px;
+    object-fit: cover;
 }
+
+/* .header-img img {
+    width: 100%;
+    height: 100%;
+} */
 
 .main {
     display: flex;
@@ -57,7 +63,7 @@ body{
     margin-bottom: 20px;
 }
 
-.img-perfil {
+.img-perfil img{
     background-color: var(--color1);
     width: 160px;
     height: 160px;
@@ -115,21 +121,59 @@ body{
 }
 
 /* Projetos */
+.projetos {
+    margin-top: 26px;
+}
+
 .cards-projetos {
     display: flex;
     flex-direction: row;
-    margin: 10px 35px;
+    margin: 12px 40px;
 }
 
 .card-projeto {
-    background-color: var(--color1);
+    background-color: var(--color2);
     width: 200px;
     height: 150px;
     margin-right: 15px;
     border-radius: 10px 0px;
 }
 
+.card-projeto a{
+    text-decoration: none;
+    color: black;
+}
+
+.img-projeto img{
+    background-color: var(--color1);
+    width: 100%;
+    height: 100px;
+    border-radius: 10px 0px 0px 0px;
+    object-fit: initial;
+}
+
+.info-projeto {
+    background-color: var(--color2);
+    width: 100%;
+    height: 50px;
+    border-radius: 0px 0px 10px 0px;
+    padding: 5px 10px;
+}
+
+.info-projeto h3 {
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.info-projeto p {
+    font-size: 12px;
+}
+
 /* Experiência proficional */
+.experiencias {
+    margin-top: 26px;
+}
+
 .experiencia {
     margin-left: 35px;
 }
@@ -139,6 +183,9 @@ body{
 }
 
 /* Formações acadêmicas */
+.formacoes-academicas {
+    margin-top: 26px;
+}
 
 .formacoes {
     margin-left: 35px;
@@ -152,7 +199,7 @@ footer {
     position: absolute;
 	bottom: 0;
     width: 100%;
-    height: 45px;
+    height: 40px;
 }
 
 footer p {
