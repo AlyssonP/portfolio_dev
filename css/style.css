@@ -12,7 +12,11 @@
 }
 
 body{
-    background-color: var(--bg-body);    
+    background-color: var(--bg-body);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 
 .header-img img{
@@ -46,6 +50,7 @@ body{
     margin-top: -130px;
     width: 380px;
     height: 640px;
+    margin-left: 10px;
 }
 
 .conteudo-card-perfil {
@@ -104,7 +109,11 @@ body{
 /* Conteudo */
 
 .conteudos {
-    margin: 20px 50px;
+    margin: 20px 20px;
+}
+
+.conteudos h2 {
+    font-size: 25px;
 }
 
 /* Habilidades */
@@ -113,6 +122,8 @@ body{
 }
 
 .habilidades p {
+    font-size: 18px;
+    margin-top: 12px;
     margin-left: 35px;
 }
 
@@ -122,13 +133,13 @@ body{
 
 /* Projetos */
 .projetos {
-    margin-top: 26px;
+    margin-top: 20px;
 }
 
 .cards-projetos {
     display: flex;
     flex-direction: row;
-    margin: 12px 40px;
+    margin: 12px 0px 0px 40px;
 }
 
 .card-projeto {
@@ -171,11 +182,20 @@ body{
 
 /* Experiência proficional */
 .experiencias {
-    margin-top: 26px;
+    margin-top: 20px;
 }
 
 .experiencia {
+    margin-top: 12px;
     margin-left: 35px;
+}
+
+.experiencia h4 {
+    font-size: 18px;
+}
+
+.experiencia li {
+    font-size: 16px;
 }
 
 .trabalhos-feitos {
@@ -184,11 +204,16 @@ body{
 
 /* Formações acadêmicas */
 .formacoes-academicas {
-    margin-top: 26px;
+    margin-top: 20px;
 }
 
 .formacoes {
+    margin-top: 12px;
     margin-left: 35px;
+}
+
+.formacoes li {
+    font-size: 18px;
 }
 
 footer {
@@ -196,10 +221,11 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-	bottom: 0;
     width: 100%;
     height: 40px;
+    margin-top: 20px;
+
+    
 }
 
 footer p {
@@ -207,3 +233,4 @@ footer p {
     font-style: normal;
     color: #FFFFFF;
 }
+
